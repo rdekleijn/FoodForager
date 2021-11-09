@@ -1,2 +1,4 @@
 # Project exclude paths
 /venv/
+/writer_test.mp4
+/temp/
