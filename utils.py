@@ -1,5 +1,8 @@
 import math
 
+import numpy as np
+
+
 def calc_new_location(position, orientation, speed):
     orientation *= math.pi / 180
     new_x = position[0] + (speed * math.cos(orientation))
@@ -18,6 +21,10 @@ def update_position(agent):
     agent.position[1] = new_y
     agent.orientation = new_orientation
     return agent
+
+
+def calc_distance(x1, y1, size1, x2, y2, size2):
+    return (np.sqrt(np.square(x1-x2) + np.square(y1-y2))) - size1/2 - size2/2
 
 
 # def circle_line_collision(p1, p2, circle_center, radius):

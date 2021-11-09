@@ -10,6 +10,7 @@ class Agent:
         self.speed = speed
         self.action = None
         self.motor_output = [0, 0, 0]
+        self.food_eaten = 0
 
     def process_observation(self):
         """Implements an action vector, with three elements:"""
